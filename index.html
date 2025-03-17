@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkinmanagement - Buy Digital Products</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #172B0F;
+            color: white;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            background-color: #0F1E08;
+            padding: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        #hero {
+            background: url('https://source.unsplash.com/1600x900/?technology,digital') no-repeat center center/cover;
+            color: white;
+            padding: 80px 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: white;
+            color: #172B0F;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        /* Sections */
+        section {
+            padding: 50px 20px;
+            background: white;
+            margin: 20px auto;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            color: #172B0F;
+        }
+
+        h2 {
+            color: #172B0F;
+            margin-bottom: 20px;
+        }
+
+        .service-box {
+            background: #f4f4f4;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        /* Payment Section */
+        #payments ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #payments ul li {
+            background: #172B0F;
+            color: white;
+            padding: 10px;
+            display: inline-block;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        /* Contact Form */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        form button {
+            background: #172B0F;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background: #0F1E08;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        footer ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        footer ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>checkinmanagement</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#payments">Payments</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Your Trusted Digital Marketplace</h2>
+        <p>We offer high-quality digital products with multiple secure payment options.</p>
+        <a href="#services" class="btn">Explore Services</a>
+    </section>
+
+    <section id="about">
+        <h2>About Checkin Management Ltd</h2>
+        <p>Checkin Management Ltd is a strategic consultancy firm that specializes in business advisory services, IT consultancy, and digital retail solutions. Our mission is to empower businesses with expert guidance in corporate strategy, operational efficiency, and digital transformation.
+With a strong foundation in business consulting, we help companies optimize their structures, improve decision-making, and develop sustainable growth strategies. Additionally, we support businesses in adopting modern technologies and leveraging e-commerce to expand their market reach.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-box">
+            <h3>Wide Range of Digital Products</h3>
+            <p>From design templates to professional software, we provide digital solutions for every need.</p>
+        </div>
+        <div class="service-box">
+            <h3>Multiple Payment Options</h3>
+            <p>We support various payment methods, including PayPal, and Credit Cards.</p>
+        </div>
+        <div class="service-box">
+            <h3>Instant Delivery</h3>
+            <p>Receive your products instantly via email or direct download after purchase.</p>
+        </div>
+    </section>
+
+    <section id="payments">
+        <h2>Accepted Payment Methods</h2>
+        <ul>
+            <li>Credit/Debit Cards</li>
+            <li>PayPal</li>
+            <li>Google Pay & Apple Pay</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>If you have any inquiries, feel free to reach out to us.</p>
+        <form action="send_email.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+       </form>
+    </section>
+
+   <footer>
+    <p>&copy; 2025 checkinmanagement All rights reserved.</p>
+    <ul>
+        <li><a href="terms.html">Terms & Conditions</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+    </ul>
+</footer>
+
+</body>
+</html>
